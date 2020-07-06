@@ -1,13 +1,65 @@
-.flex {
-  background-color: #00c7ce;
-  height: 50vh;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
-.flex > div {
-  background-color: #fff;
-  margin: 5px;
-  font-size: 30px;
+.header-flex {
+	background-color: #FF00FF;
+	width: 100%;
+	display: flex;
+	padding: 30px 20px;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.header-flex-item {
+	height: 70px;
+	background-color: #FFAAFF;
+	flex-basis: 140px;
+	margin: 0 10px;
+}
+.header-flex-item:first-child {
+	margin-right: auto;
+}
+
+.background-color-black {
+	width: 100%;
+	background-color: black;
+	display: flex;
+	justify-content: center;
+}
+.background-color-litegreen {
+	background-color: #CCFFCC;
+	width: 1000px;
+	display: flex;
+	justify-content: flex-end;
+}
+.body-flex {
+	background-color: green;
+	width: 700px;
+	display: flex;
+	padding: 20px;
+	flex-wrap: wrap;
+}
+.body-flex-item {
+	background-color: yellow;
+	margin: 10px;
+	flex-basis: 200px;
+	height: 130px;
+	flex-grow: 1;
+}
+
+.footer-flex {
+	background-color: #005FFF;
+	display: flex;
+	padding: 20px;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.footer-flex-item {
+	flex-basis: 45%;
+	height: 40px;
+	background-color: #00ECFF;
+	margin: 10px;
 }
